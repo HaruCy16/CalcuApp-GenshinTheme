@@ -19,6 +19,12 @@ input {
   background: url("images/inputBG.jpg");
   background-size: cover;
   color: white;
+  text-align: right;
+}
+::placeholder {
+  font-size: 26px;
+  text-align: right;
+  color: rgba(43, 206, 187, 0.815);
 }
 .row-1,
 .row-2,
@@ -33,6 +39,12 @@ button {
   height: 50px;
   font-size: 20px;
   display: inline-block;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  box-shadow: 0px 0px 15px rgb(70, 164, 140);
 }
 .row-5 button {
   width: 136px;
@@ -51,6 +63,8 @@ button#equalsBtn {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+  border-bottom: 1px white solid;
+  width: auto;
 }
 .history-header h3 {
   color: white;
@@ -60,10 +74,13 @@ button#equalsBtn {
   font-size: 16px;
   width: auto;
   margin-left: 10px;
+  border-radius: 10px;
+  background-color: #3c6144;
+  border: none;
 }
 .calculation-history {
   color: white;
-  font-size: 16px;
+  font-size: 20px;
 }
 @media only screen and (max-width: 720px) {
   .calculator {
@@ -82,5 +99,8 @@ button#equalsBtn {
   }
   .row-5 button {
     width: 157.5px;
+  }
+  .history-header {
+    width: 467px;
   }
 }
